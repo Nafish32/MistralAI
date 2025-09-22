@@ -5,7 +5,6 @@ import './App.css'; // Optional: for styling
 function App() {
   const [message, setMessage] = useState('');
   const [chatLog, setChatLog] = useState([]);
-  const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
   const chatEndRef = useRef(null);
@@ -21,14 +20,13 @@ function App() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (!message.trim()) {
-      setError('Please enter a message.');
+      setChatLog(prev => [...prev, { sender: 'error', text: 'Please enter a message.' }]);
       return;
     }
 
     const userMessage = { sender: 'user', text: message };
     setChatLog(prev => [...prev, userMessage]);
     setIsLoading(true);
-    setError('');
     setMessage('');
 
     try {
