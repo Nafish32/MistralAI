@@ -2,7 +2,7 @@
 
 A full-stack chat application powered by Mistral AI, featuring a Spring Boot backend and React frontend for seamless AI conversations.
 
-![Mistral Chat Interface](docs/chat-interface.png)
+![Mistral Chat Interface](https://github.com/user-attachments/assets/c333fb85-bebc-409b-8ff1-c67104fb9c45)
 
 ## 🌟 Features
 
@@ -24,6 +24,26 @@ A full-stack chat application powered by Mistral AI, featuring a Spring Boot bac
 │                 │                 │ (Port 8085)     │                │                 │
 └─────────────────┘                 └─────────────────┘                └─────────────────┘
 ```
+
+## 🛠️ Technology Stack
+
+**Backend:**
+- Java 17
+- Spring Boot 3.5.0
+- Spring AI 1.0.0
+- Mistral AI Integration
+- Maven
+
+**Frontend:**
+- React 19.1.0
+- Axios for HTTP requests
+- CSS3 for styling
+- npm/Create React App
+
+**Development Tools:**
+- Maven Wrapper
+- Node.js & npm
+- Hot reload for development
 
 ## 📋 Prerequisites
 
@@ -55,6 +75,14 @@ export MISTRALAI_RAIYAN=your_mistral_ai_api_key_here
 ```cmd
 set MISTRALAI_RAIYAN=your_mistral_ai_api_key_here
 ```
+
+### Getting Your Mistral AI API Key
+
+1. Visit [Mistral AI Console](https://console.mistral.ai/)
+2. Create an account or sign in
+3. Navigate to the API Keys section
+4. Generate a new API key
+5. Copy the key and set it as an environment variable (see step 2 above)
 
 ### 3. Backend Setup (Spring Boot)
 
